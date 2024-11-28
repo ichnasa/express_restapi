@@ -1,1 +1,25 @@
-GET http://localhost:3000/
+GET http://localhost:3000/notes
+
+### 
+POST http://localhost:3000/notes
+Content-Type: application/json
+
+{
+    "note": {
+        "content": "POSTED"
+    }
+}
+
+### 
+PUT http://localhost:3000/notes
+Content-Type: application/json
+
+{
+    "note": {
+        "id": "2",
+        "content": "UPUTDATE"
+    }
+}
+
+### 
+DELETE http://localhost:3000/notes/
